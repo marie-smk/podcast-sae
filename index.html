@@ -15,13 +15,37 @@
         header {
             background-color: #2980b9;
             color: white;
-            padding: 40px 0;
+            padding: 20px 0;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             font-size: 36px;
             margin: 0;
+        }
+        nav {
+            background-color: #3498db;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
         }
         .content {
             padding: 30px 20px;
@@ -125,9 +149,18 @@
     <h1>Podcast : Science et Données - Décoder la Recherche</h1>
 </header>
 
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#podcast">Podcast</a></li>
+        <li><a href="#ressources">Ressources</a></li>
+        <li><a href="credit.html">Crédits</a></li>
+    </ul>
+</nav>
+
 <div class="content">
     <!-- Podcast Section -->
-    <section class="section podcast-container">
+    <section id="podcast" class="section podcast-container">
         <h2 class="podcast-title">Écoutez le Podcast</h2>
         <audio class="audio-player" controls>
             <source src="podcast.mp4" type="audio/mp4">
@@ -140,12 +173,11 @@
     </section>
 
     <!-- Resources Section -->
-    <section class="section resource-links">
+    <section id="ressources" class="section resource-links">
         <h2>Ressources et Publications</h2>
-        <p>Pour acceder au travail des chercheuses du podcast, explorez le lien suivant :</p>
+        <p>Pour accéder au travail des chercheuses du podcast, explorez le lien suivant :</p>
         <ul>
             <li><a href="https://drive.google.com/file/d/1lt4LqaibE9_vlmSbdvFuLCUZLMIgTbNN/view?usp=drive_link" target="_blank">Publication du travail des chercheuses</a></li>
-
         </ul>
     </section>
 </div>
